@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <link rel="stylesheet" href="./css/estilo_index.css">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="./css/estilo_temporizador.css">
     <link rel="icon" type="image/jpg" href="./imagens/hourglass (1).png" />
     <!--LINKS EXTERNOS:-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,16 +20,27 @@
     <div class="container">
         <div class="corpo">
             <div class="cabeca">
-                <h2>CRONÔMETRO</h2>
+                <h2>TEMPORIZADOR</h2>
             </div>
-            <div class="escolha">
-                <a href="./pag_cronometro.html"><button>Cronometro</button></a>
-                <a href="./pag_temporizador.html"><button>Temporizador</button></a>
+            <div class="tempo">
+                <div id = "cron" class="cron">
+                    <div class="num_min"></div>
+                    <div>:</div>
+                    <div class="num_seg"></div>
+                    <div>.</div>
+                    <div class="num_cent"></div>
+                </div>
+                <div class="botoes">
+                    <button class="botao_iniciar" onclick="oficial()">Iniciar</button>
+                    <button class="botao_parar" onclick="parar()">Pausar</button>
+                    <button class="botao_zerar" onclick="zerar()">Zerar</button>
+                </div>
             </div>
             <div class="rodape">
                 <h2>Felipe Gabriel - Copyright &copy;</h2>
             </div>
         </div>
     </div>
+    <script src="./javascript/base.js"></script>
 </body>
 </html>
