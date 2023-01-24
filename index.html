@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Cronomêtro</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!--LINKS EXTERNOS:-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="corpo">
+            <div class="cabeca">
+                <h2>CRONÔMETRO</h2>
+            </div>
+            <div class="tempo">
+                <div id = "cron" class="cron">
+                    <div class="num_min"></div>
+                    <div>:</div>
+                    <div class="num_seg"></div>
+                    <div>.</div>
+                    <div class="num_cent"></div>
+                </div>
+                <div class="botoes">
+                    <button class="botao_iniciar" onclick="oficial()">Iniciar</button>
+                    <button class="botao_parar" onclick="parar()">Stop</button>
+                    <button class="botao_zerar" onclick="zerar()">Zerar</button>
+                </div>
+            </div>
+            <div class="rodape">
+                <h2>Felipe Gabriel - Copyright &copy;</h2>
+            </div>
+        </div>
+    </div>
+    <script src="./javascript/base.js"></script>
+</body>
+</html>
